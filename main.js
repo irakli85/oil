@@ -6,10 +6,10 @@ let reset = document.querySelector("#reset");
 
 
 
-let docValue;
-let factValue;
-let x;
-let y;
+// let docValue;
+// let factValue;
+// let x;
+// let y;
 
 function docInputFn(){
     docValue = docInput.value;
