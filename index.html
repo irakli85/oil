@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip-calculator-app-main</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts/css/archyedt-bold.min.css">
+</head>
+<body>
+
+    <header>
+        <img src="./images/rs.ge-logo-EN.png" alt="rs.logo">
+        <h1>ნავთობისა და ნავთობპროდუქტების რაოდენობის გაზომვის მეთოდების დასაშვები ცდომილების ნორმები</h1>
+    </header>
+
+    <section>
+        
+        <form class="input" action="">
+
+               <label class="input-lebel-one" for="bill">დოკუმენტური რაოდენობა</label>
+               <input type="number" name="bill" id="bill" placeholder="0">
+               <img class="dollar-img" src="./images/paper-icon.svg" alt="dollar">
+
+              
+               
+                
+               
+               <div class="zero-label">
+                    <label class="input-lebel-two" for="people">ფაქტიური რაოდენობა</label>
+                    <strong id="zero-error">Can’t be zero</strong>
+               </div>
+
+            </div>
+
+               <input type="number" name="people" id="people" placeholder="0">
+               <img class="people-img" src="./images/ruler-icon.svg" alt="person">
+        </form>
+           
+
+        <div class="output">
+
+            <div class="tip-amount">
+                <div>
+                    <span class="tip-text">ცდომილება რაოდენობრივად</span>
+                </div>
+                <span class="number" id="tip-per-person">0.00</span>
+            </div>
+
+            <div class="total">
+                <div>
+                    <span class="total-text">ცდომილება პროცენტულად</span>
+                </div>
+                <span class="number" id="total-per-person">0.00</span>
+            </div>
+            <!-- <button type="reset" id="reset">RESET</button> -->
+            <input type="reset" id="reset" value="RESET">
+        </div>
+        
+    </section>
+
+    
+    <script src="./main.js"></script>
+</body>
+</html>

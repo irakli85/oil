@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Mono:wght@700&display=swap');
+
+:root{
+    --dark-green: #00474B;
+    --light-green: #26C2AE;
+    --gray-1: #7F9D9F;
+    --gray-2: #5E7A7D;
+    --bg: #C5E4E7;
+    --input-bg: #F3F9FA;
+    --reset-bg: #0D686D;
+    --hover-bg: #9FE8DF;
+}
+
+label,
+span{
+    display: block;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    list-style: none;
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bg);
+}
+
+header h1{
+    text-align: center;
+    margin-top: 50px;
+    font-family: "ArchyEDT-Bold", sans-serif;
+    padding: 50px;
+}
+
+
+section{
+    padding: 32px; 
+    width: 100%;
+    margin-top: 41px;   
+    background: #FFFFFF;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px 25px 0px 0px;
+}
+
+
+
+.input{
+    position: relative;
+}
+
+/* hide arrows from input  */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+.dollar-img{
+    position: absolute;
+    top: 47px;
+    left: 16px;
+}
+
+.input-lebel-one,
+.input-lebel-two{
+    font-family: "ArchyEDT-Bold", sans-serif;
+    font-size: 16px;
+    color: var(--gray-2);
+}
+
+#bill,
+#people{
+    text-align: right;
+    border-radius: 5px;
+    border-style: none;
+    background: var(--input-bg);
+    height: 48px;
+    width: 100%;
+    margin-top: 6px;
+    font-size: 24px;
+    color: #00474B;
+    padding-right: 17px;
+}
+
+#bill:hover{
+    cursor: pointer;
+}
+
+::placeholder{
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 24px;
+    text-align: right;
+    color: #00474B;
+    opacity: 0.35;
+}
+
+#bill:focus,
+#people:focus {
+    outline: none;
+    border:2px solid var(--light-green);
+  }
+
+  .tip-select{
+    margin-top: 32px;
+    font-size: 16px;
+    color: var(--gray-2);
+  }
+
+  .percentage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .percentage span,
+  .zero-label{
+    flex-basis: 33%;
+  }
+
+  .tips{
+        display: none;
+  }
+
+  .percentage span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    height: 48px;
+    width: 146px;
+    border-radius: 5px;
+    background: var(--dark-green);
+
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+  }
+
+  #percentage-input{
+    margin-top: 16px;
+    height: 48px;
+    width: 146px;
+    border-radius: 5px;
+    background: var(--input-bg);
+
+    font-size: 24px;
+    color: #00474B;
+    
+  }
+
+  .percentage span:hover{
+    cursor: pointer;
+    background: var(--hover-bg);
+    color: var(--dark-green);
+    transition: all .3s ease;
+  }
+
+  /* cheked */
+  .percentage input:checked + span{    
+    background: var(--hover-bg);
+    color: var(--dark-green);
+      }
+
+  li input:hover{
+    cursor: pointer;
+  }
+
+  #percentage-input{
+    text-align: right;
+    padding-right: 17px;
+  }
+
+  #percentage-input:focus {
+    outline: none;
+    border:2px solid var(--light-green);
+  }
+
+   .zero-label{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #zero-error{
+    font-size: 16px;
+    color: #E17457;
+    display: none;
+  }
+
+  .people-img{
+    position: relative;
+    top: -34px;
+    left: 16px;
+}
+
+.output{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    background: var(--dark-green);
+    border-radius: 15px;
+}
+
+.tip-amount,
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip-amount div,
+.total div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tip-text,
+.total-text{
+    font-family: "ArchyEDT-Bold", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.person{
+    font-size: 13px;
+    color: var(--gray-1);
+}
+
+.number{
+    font-size: 48px;
+    text-align: right;
+    letter-spacing: -1px;
+    color: var(--light-green);
+}
+
+.total{
+    margin-top: 25px;
+}
+
+#reset{
+    margin-top: 35px;
+    height: 48px;
+    width: 100%;
+    border-radius: 5px;
+    background: var(--reset-bg);
+
+    font-size: 20px;
+    text-align: center;
+    color: var(--dark-green);
+    opacity: 0.35;    
+}
+
+#reset:hover{
+    cursor: pointer;
+    background: var(--hover-bg);
+    opacity: 1;
+    transition: all .3s ease;  
+}
+
+  
+
+
+
+
+
+
