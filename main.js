@@ -24,7 +24,7 @@ function factInputFn(){
     console.log(factValue);
     x = +docValue - +factValue;
     y = x / +docValue * 100;
-    if (y > 0.5){
+    if (y > 0.5 || y < -0.5){
         redColorNum.style.color = "red";
         redColorPerc.style.color = "red";
     }else{
