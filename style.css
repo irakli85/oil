@@ -42,37 +42,14 @@ header h1{
     font-family: "ArchyEDT-Bold", sans-serif;
     padding: 50px;
 }
+
 nav{
+  display: none;  
+}
+.navigation{ 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
-
-nav a{
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-family: "ArchyEDT-Bold", sans-serif;
-  margin-left: 20px;
-  border: solid 2px #0D686D;
-  border-radius: 5px;
-  height: 50px;
-  width: 150px;
-}
-
-.nav-items span{
-  font-family: "ArchyEDT-Bold", sans-serif;
-  margin-left: 5px;
-}
-
-.navigation{
-  display: flex;
-}
-
-.nav-items img{
-  margin-left: 5px;
-}
-
 
 section{
     padding: 32px; 
@@ -320,6 +297,39 @@ input[type=number]::-webkit-outer-spin-button {
   #tip-per-person{
     margin-left: 15px;
   }
+
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "ArchyEDT-Bold", sans-serif;
+    margin-left: 20px;
+    border: solid 2px #0D686D;
+    border-radius: 5px;
+    height: 50px;
+    width: 150px;
+  }
+  
+  .nav-items span{
+    font-family: "ArchyEDT-Bold", sans-serif;
+    margin-left: 5px;
+  }
+  
+  .navigation{
+    display: flex;
+  }
+  
+  .nav-items img{
+    margin-left: 5px;
+  }
+
+
 }
 
   
