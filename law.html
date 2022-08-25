@@ -37,8 +37,8 @@
     <section>
         <label for="product-select">საქონელი:</label>
 
-        <select name="pets" id="product-select">
-            <option value="">--აირჩიეთ--</option>
+        <select name="pets" id="product-select" onchange="getValue();">
+            <option value="" selected>--აირჩიეთ--</option>
             <option value="item-1">ბენზინი</option>
             <option value="item-2">ნედლი ნავთობი</option>
             <option value="item-3">დიზელი</option>
@@ -54,11 +54,19 @@
             <option value="item-13">აირის კონდენსატი ბუნებრივი</option>
             <option value="item-14">ნავთობის აირები გათხევადებული</option>
             <option value="item-15">ნახშირწყალბადები აცეკლური</option>
-        </select>        
+        </select> 
+        <p class="sec-page-text">ბენზინზე
+            საზღვაო გადაზიდვები	0.35
+            სარკინიგზო გადაზიდვები	0.24
+            საავტომობილო გადაზიდვები	0.12
+            რეზერვუარში შენახვა (მიწისზედა რეზერვუარში 1 თვეზე მეტი ვადით შენახვის
+            გარდა	0.25
+            მიწისზედა რეზერვუარში შენახვა 1 თვეზე მეტი ვადით	0.35
+            </p>       
         
     </section>
 
     
-    
+    <script src="./second.js"></script>
 </body>
 </html>
