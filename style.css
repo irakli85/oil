@@ -61,8 +61,6 @@ section{
     margin-bottom: 50px;
 }
 
-
-
 .input{
     position: relative;
 }
@@ -298,6 +296,11 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: 15px;
   }
 
+  .navigation{
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
   nav{
     display: flex;
     justify-content: center;
@@ -327,6 +330,10 @@ input[type=number]::-webkit-outer-spin-button {
   
   .nav-items img{
     margin-left: 5px;
+  }
+
+  .burger{
+    display: none;
   }
 
 
