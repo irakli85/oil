@@ -317,7 +317,8 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 5px;
     height: 50px;
     width: 150px;
-    box-shadow: rgba(0, 0, 0, 0.45) 1.95px 1.95px 2.6px;
+    /* box-shadow: rgba(0, 0, 0, 0.45) 1.95px 1.95px 2.6px; */
+    box-shadow: #00474B 5px 5px, #0D686D 10px 10px, #26C2AE 15px 15px, #9FE8DF 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
   }
 
 
