@@ -317,11 +317,21 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 5px;
     height: 50px;
     width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.45) 1.95px 1.95px 2.6px;
   }
+
+
+  nav a:hover{
+    background: var(--light-green);
+    transition: all .8s ease;
+  }
+
+  
   
   .nav-items span{
     font-family: "ArchyEDT-Bold", sans-serif;
     margin-left: 5px;
+    color: var(--dark-green);
   }
   
   .navigation{
