@@ -99,8 +99,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .dollar-img{
-    position: absolute;
-    top: 38px;
+    position: relative;
+    top: -32px;
     left: 16px;
 }
 
@@ -312,6 +312,13 @@ input[type=number]::-webkit-outer-spin-button {
 
   .output{
     min-width: 500px;
+  }
+
+  .input-lebel-one{
+    margin-top: 35px;
+  }
+  #tip-per-person{
+    margin-left: 15px;
   }
 }
 
