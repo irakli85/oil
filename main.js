@@ -27,6 +27,9 @@ function factInputFn(){
     if (y > 0.5){
         redColorNum.style.color = "red";
         redColorPerc.style.color = "red";
+    }else{
+        redColorNum.style.color = "#26C2AE";
+        redColorPerc.style.color = "#26C2AE";
     }    
     numberOutput.innerText = x + "kg";
     percentOutput.innerText = y.toFixed(2) + "%";
