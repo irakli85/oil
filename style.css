@@ -44,6 +44,8 @@ header h1{
 }
 nav{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a{
@@ -52,7 +54,10 @@ nav a{
   text-decoration: none;
   font-family: "ArchyEDT-Bold", sans-serif;
   margin-left: 20px;
-
+  border: solid 2px #0D686D;
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
 }
 
 .nav-items span{
@@ -64,7 +69,7 @@ nav a{
   display: flex;
 }
 
-{
+.nav-items img{
   margin-left: 5px;
 }
 
@@ -296,6 +301,18 @@ input[type=number]::-webkit-outer-spin-button {
     background: var(--hover-bg);
     opacity: 1;
     transition: all .3s ease;  
+}
+
+@media screen and (min-width: 1000px){
+  section{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .output{
+    min-width: 500px;
+  }
 }
 
   
