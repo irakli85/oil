@@ -356,11 +356,23 @@ input[type=number]::-webkit-outer-spin-button {
 ------------------
 second 
    */
-
+  section{
+    display: flex;
+    flex-direction: column;
+  }
 
    .sec-page-text{
+    font-family: "ArchyEDT-Bold", sans-serif;
     display: none;
    }
+
+   hr{
+    width: 100%;
+    height: 2px;
+    background-color: #00474B;
+   }
+
+   
 
 
 
