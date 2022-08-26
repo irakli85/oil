@@ -314,6 +314,14 @@ input[type=number]::-webkit-outer-spin-button {
     color:#FFFFFF;  
 }
 
+.third-text{
+  flex-direction: column;
+  padding:50px 10px;
+  text-align: justify;
+ }
+
+
+
 @media screen and (min-width: 1000px){
   .logo{
     position: relative;
@@ -406,6 +414,10 @@ input[type=number]::-webkit-outer-spin-button {
     display: none;
   }
 
+  .third-text{
+    padding:50px 150px;
+   }
+
 
 }
 /* 
@@ -434,11 +446,7 @@ second
 third 
    */
 
-   .third-text{
-    flex-direction: column;
-    padding:50px 150px;
-    text-align: justify;
-   }
+   
 
    .third-text h1, h2, h3{
     text-align: center;
