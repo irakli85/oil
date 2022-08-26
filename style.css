@@ -378,6 +378,16 @@ second
 third 
    */
 
+   .third-text{
+    padding:0 150px;
+    padding-top: 50px;
+    text-align: justify;
+   }
+
+   .third-text h1, h2, h3{
+    text-align: center;
+   }
+
 
    
 
