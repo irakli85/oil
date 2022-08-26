@@ -36,6 +36,20 @@ body{
     background: var(--bg);
 }
 
+.logo{
+  position: relative;
+  animation-name: logo;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+  0%   {left:0px; top:0px;}
+  25%  {left:50px; top:0px;}
+  50%  {left:50px; top:50px;}
+  75%  {left:0px; top:50px;}
+  100% {left:0px; top:0px;}
+}
 
 
 header h1{
@@ -266,19 +280,21 @@ input[type=number]::-webkit-outer-spin-button {
     height: 48px;
     width: 100%;
     border-radius: 5px;
-    background: var(--reset-bg);
+    background: var(--hover-bg);
 
     font-size: 20px;
     text-align: center;
     color: var(--dark-green);
-    opacity: 0.35;    
+    opacity: 1;
+    outline: none;    
 }
 
 #reset:hover{
     cursor: pointer;
-    background: var(--hover-bg);
-    opacity: 1;
-    transition: all .3s ease;  
+    background: var(--reset-bg);
+    opacity: 0.35;
+    transition: all .3s ease;
+    color:#FFFFFF;  
 }
 
 @media screen and (min-width: 1000px){
@@ -379,8 +395,8 @@ third
    */
 
    .third-text{
-    padding:0 150px;
-    padding-top: 50px;
+    flex-direction: column;
+    padding:50px 150px;
     text-align: justify;
    }
 
